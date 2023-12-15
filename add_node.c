@@ -1,9 +1,15 @@
 #include "monty.h"
-
-/* addnode - adds new node to a stack
- * @head: A pointer to the top mode node of a stack_t linked list.
- * @n: The value to be stored in the new node.
+/**
+ * addnode - Adds a new node to the top of the stack
+ * @head: A pointer to the pointer to the top node of the stack (or NULL)
+ * @n: The integer value to be stored in the new node
+ *
+ * Description:
+ * This function creates a new node, assigns the given integer value to it,
+ * and adds it to the top of the stack. It updates the head pointer accordingly
+ * and sets the new node as the top node of the stack.
  */
+
 void addnode(stack_t **head, int n)
 {
 stack_t *new_node = (stack_t *)malloc(sizeof(stack_t));

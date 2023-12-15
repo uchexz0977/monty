@@ -9,7 +9,7 @@ void monty_queue(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;
-	jud.lifi = 1;
+	bus.lifi = 1;
 }
 
 /**

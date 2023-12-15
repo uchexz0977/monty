@@ -9,7 +9,7 @@
 
 #define MAX_LINE_LENGTH 1024 /* Define your maximum line length */
 
-jud_t jud  = {NULL, NULL, NULL, 0};
+bus_t bus  = {NULL, NULL, NULL, 0};
 int main(int argc, char *argv[])
 {
 char content[MAX_LINE_LENGTH];
@@ -40,7 +40,7 @@ size = strlen(content);
 if (size > 0 && content[size - 1] == '\n')
 content[size - 1] = '\0'; /* Remove the newline character if present */
 
-jud.content = content;
+bus.content = content;
 counter++;
 
 execute(content, &stack, counter, file);

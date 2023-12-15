@@ -19,8 +19,8 @@ void monty_div(stack_t **head, unsigned int counter)
 	if (len < 2)
 	{
 		fprintf(stderr, "L%d: can't div, stack too short\n", counter);
-		fclose(jud.file);
-		free(jud.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
@@ -28,8 +28,8 @@ void monty_div(stack_t **head, unsigned int counter)
 	if (h->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", counter);
-		fclose(jud.file);
-		free(jud.content);
+		fclose(bus.file);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
